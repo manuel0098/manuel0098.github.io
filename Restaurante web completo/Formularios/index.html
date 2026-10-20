@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Luis Carrillo Sotomayor">
+    <meta name="description" content="Prácticas de Desarrollo Web.">
+    <meta name="keywords" content="desarrollo web, HTML, prácticas">
+    <title>Formularios</title>
+</head>
+<body>
+<header><h1>Formularios</h1></header>
+<nav><a href="../index1.html">Volver al menú principal</a></nav>
+<main>
+    <section>
+        <h2>Hoja de inscripción en los ciclos formativos de grado superior</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <p><label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required></p>
+                <p><label for="apellidos">Apellidos:</label> <input type="text" id="apellidos" name="apellidos" required></p>
+                <p><label for="dni">DNI:</label> <input type="text" id="dni" name="dni"></p>
+                <p><label for="localidad">Localidad de nacimiento:</label> <input type="text" id="localidad" name="localidad"></p>
+                <p><label for="provincia">Provincia:</label>
+                    <select id="provincia" name="provincia">
+                        <option>Huelva</option><option>Córdoba</option><option>Sevilla</option><option>Granada</option><option>Málaga</option><option>Cádiz</option><option>Jaén</option><option>Almería</option>
+                    </select>
+                </p>
+                <p><label for="nacimiento">Fecha de nacimiento:</label> <input type="date" id="nacimiento" name="nacimiento"></p>
+                <p><label for="direccion">Dirección:</label> <input type="text" id="direccion" name="direccion"></p>
+                <p><label for="cp">Código postal:</label> <input type="text" id="cp" name="cp" pattern="[0-9]{5}"></p>
+            </fieldset>
+            <fieldset>
+                <legend>Forma de acceso</legend>
+                <p><label><input type="radio" name="acceso" value="directo"> Directo</label></p>
+                <p><label><input type="radio" name="acceso" value="bachillerato"> Bachillerato. Modalidad: <input type="text" name="modalidad"></label></p>
+                <p><label><input type="radio" name="acceso" value="experimental"> Experimental</label></p>
+                <p><label><input type="radio" name="acceso" value="cou"> COU. Opción: <input type="text" name="opcion_cou"></label></p>
+                <p><label><input type="radio" name="acceso" value="fp2"> FP2</label></p>
+                <p><label><input type="radio" name="acceso" value="otros"> Otros (especifique): <input type="text" name="otros"></label></p>
+                <p><label><input type="radio" name="acceso" value="prueba"> Prueba libre</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Documentos adjuntados</legend>
+                <p><label><input type="checkbox" name="documentos" value="dni"> Fotocopia DNI</label></p>
+                <p><label><input type="checkbox" name="documentos" value="certificado"> Certificado académico</label></p>
+                <p><label><input type="checkbox" name="documentos" value="otros"> Otros documentos (especifique): <input type="text" name="otros_documentos"></label></p>
+            </fieldset>
+            <button type="submit">Enviar solicitud</button>
+            <button type="reset">Limpiar datos</button>
+        </form>
+    </section>
+    <section>
+        <h2>Cuestionario: Amigos de la informática</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <p><label for="qnombre">Nombre:</label> <input type="text" id="qnombre" name="nombre" required></p>
+                <p><label for="domicilio">Domicilio:</label> <input type="text" id="domicilio" name="domicilio" placeholder="Calle, número y localidad"></p>
+                <p><label for="pais">País de origen:</label> <select id="pais" name="pais"><option>España</option><option>Portugal</option><option>Francia</option><option>Otro</option></select></p>
+                <p><label for="fecha">Fecha de nacimiento:</label> <input type="date" id="fecha" name="fecha"></p>
+                <p><label for="email">Correo electrónico:</label> <input type="email" id="email" name="email"></p>
+                <p><label for="telefono">Teléfono:</label> <input type="tel" id="telefono" name="telefono"></p>
+                <p>Estado civil:
+                    <label><input type="radio" name="estado" value="soltero"> Soltero/a</label>
+                    <label><input type="radio" name="estado" value="casado"> Casado/a</label>
+                    <label><input type="radio" name="estado" value="separado"> Separado/a</label>
+                    <label><input type="radio" name="estado" value="viudo"> Viudo/a</label>
+                </p>
+                <p>Sexo:
+                    <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+                    <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Otra información de interés</legend>
+                <p><label for="componentes">Componentes electrónicos con los que trabaja habitualmente:</label><br>
+                    <select id="componentes" name="componentes" multiple size="4">
+                        <option>Móvil</option><option>Tablet</option><option>Ordenador</option><option>Ebook</option>
+                    </select>
+                </p>
+                <p>Actividades favoritas:</p>
+                <p>
+                    <label><input type="checkbox" name="actividades" value="deporte"> Hacer deporte</label>
+                    <label><input type="checkbox" name="actividades" value="amigos"> Salir con mis amigos</label>
+                    <label><input type="checkbox" name="actividades" value="series"> Ver series, películas</label>
+                    <label><input type="checkbox" name="actividades" value="senderismo"> Realizar rutas de senderismo</label>
+                    <label><input type="checkbox" name="actividades" value="cine"> Ir al cine</label>
+                    <label><input type="checkbox" name="actividades" value="musica"> Escuchar música</label>
+                </p>
+                <p><label for="motivo">Explique brevemente el motivo por el que desea ingresar en nuestro club:</label><br><textarea id="motivo" name="motivo" rows="5" cols="50"></textarea></p>
+                <p><label for="pelicula">Elige o escribe tu peli favorita:</label> <input type="text" id="pelicula" name="pelicula"></p>
+            </fieldset>
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </section>
+</main>
+<footer><p><a href="../index1.html">Volver al menú principal</a></p></footer>
+</body>
+</html>

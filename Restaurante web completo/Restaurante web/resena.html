@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Luis Carrillo Sotomayor">
+    <meta name="description" content="Prácticas de Desarrollo Web.">
+    <meta name="keywords" content="desarrollo web, HTML, prácticas">
+    <title>Reseña de un plato</title>
+</head>
+<body>
+<header><h1>Escribir una reseña</h1></header>
+<nav><a href="index.html">Volver al restaurante</a></nav>
+<main>
+    <form action="#" method="get">
+        <p><label for="plato">Plato:</label>
+            <select id="plato" name="plato" required>
+                <option value="">Selecciona un plato</option>
+                <option value="tortilla-patatas">Tortilla de Patatas</option>
+                <option value="patatas-ketchup">Patatas con Kétchup</option>
+                <option value="tortilla-francesa">Tortilla Francesa</option>
+            </select>
+        </p>
+        <p><label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required></p>
+        <p><label for="resena">Reseña del plato:</label><br><textarea id="resena" name="resena" rows="6" cols="45" required></textarea></p>
+        <button type="submit">Enviar reseña</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</main>
+<footer><p><a href="index.html">Volver al restaurante</a></p></footer>
+</body>
+</html>

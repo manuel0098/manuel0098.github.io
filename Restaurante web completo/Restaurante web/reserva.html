@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Luis Carrillo Sotomayor">
+    <meta name="description" content="Prácticas de Desarrollo Web.">
+    <meta name="keywords" content="desarrollo web, HTML, prácticas">
+    <title>Reserva</title>
+</head>
+<body>
+<header><h1>Haz una reserva</h1></header>
+<nav><a href="index.html">Volver al restaurante</a></nav>
+<main>
+    <form action="#" method="get">
+        <p><label for="nombre">Su nombre:</label> <input type="text" id="nombre" name="nombre" required></p>
+        <p><label for="clientes">Número de clientes:</label> <input type="number" id="clientes" name="clientes" min="1" required></p>
+        <p><label for="correo">Su correo electrónico:</label> <input type="email" id="correo" name="correo" required></p>
+        <p><label for="telefono">Su teléfono:</label> <input type="tel" id="telefono" name="telefono"></p>
+        <p><label for="fecha">Fecha de la reserva:</label> <input type="date" id="fecha" name="fecha" required></p>
+        <p><label for="hora">Hora de la reserva:</label> <input type="time" id="hora" name="hora" required></p>
+        <p><label for="mensaje">Su mensaje:</label><br><textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea></p>
+        <button type="submit">Solicitar reserva</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</main>
+<footer><p><a href="index.html">Volver al restaurante</a></p></footer>
+</body>
+</html>
